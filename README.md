@@ -1,4 +1,10 @@
 <!-- 
+Qanday ishlatish bo’yicha na’muna: https://github.com/uzbmuydinov/custom_alert_dialog_test.git
+
+Package linki: https://github.com/uzbmuydinov/custom_alert_dialog_me.git
+
+Videodars: https://youtu.be/jh0rxK34DfQ
+
 This README describes the package. If you publish this package to pub.dev,
 this README's contents appear on the landing page for your package.
 
