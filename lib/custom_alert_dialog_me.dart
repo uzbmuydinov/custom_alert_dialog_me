@@ -29,17 +29,15 @@ class CustomAlertDialog extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
       ),
       title: Text(
-          //mana shu yerga tepadagi tekst berib ketiladi
-          title,
-          textAlign: TextAlign.center),
+        title,
+        textAlign: TextAlign.center,
+      ),
       alignment: Alignment.center,
       content: Container(
-        constraints: BoxConstraints(minHeight: 250, minWidth: 100),
+        constraints: BoxConstraints(minWidth: 100, maxHeight: 250),
         child: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
-          // mana shu joyida content qismi beriladi
           child: Text(
-            // bu yerga content atributi beriladi
             content,
             style: TextStyle(fontSize: 18),
             textAlign: TextAlign.center,
@@ -51,18 +49,17 @@ class CustomAlertDialog extends StatelessWidget {
           height: 60,
           margin: EdgeInsets.only(top: 1),
           decoration: BoxDecoration(
-              border: Border(top: BorderSide(color: Colors.grey, width: 0.5))),
+              border: Border(
+                  top: BorderSide(color: Colors.grey, width: 0.5))),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Expanded(
                 child: TextButton(
                   onPressed: () {
-                    // bu yerga birinchi funksia yozildi
                     functionOne();
                   },
                   child: Text(
-                    //mana shu joyda birinchi buttonga funksiya berialdi
                     textButtonOne,
                     style: TextStyle(fontSize: 19, color: Colors.red),
                   ),
